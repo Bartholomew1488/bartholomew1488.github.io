@@ -1,6 +1,8 @@
 const fed = document.getElementById("fed")
 const lexus = document.getElementById("lexus")
-var error_msg = "Некорректно заполнены поля: ";
+//var p = document.querySelectorAll('.count');//
+
+
 
 document.addEventListener("keydown", function(event){
     jump();
@@ -29,9 +31,40 @@ let isAlive = setInterval (function() {
     let lexusleft = parseInt(window.getComputedStyle(lexus).getPropertyValue("left"));
     
     if (lexusleft < 350 && lexusleft > 100 && fedTop >= 220) {
-       
-    document.getElementById("text").style.display = "block";
-        
+      document.getElementById("text").style.display = "block";
     }
-})
+   
+    
+        
 
+     
+     onload = function(){
+         // инициализируем интервал
+         setInterval(function(){
+               // функция будет вызываться каждую секунду
+               // выбираем наш "счетчик" див
+               var counter = document.getElementById("counter");
+               // получаем целочисленное значение его HTML'я
+               var counterValue = parseInt(counter.innerHTML);
+               if(counterValue) {
+                   // если оно не 0 ( т.е. не является false )
+                   ++counterValue;
+                   // уменьшаем на единицу
+                   counter.innerHTML = counterValue;
+                   // записываем в элемент
+               }
+               
+         }, 2000);
+    }
+     
+    
+    
+        
+    
+    
+    
+        
+  
+    
+     
+})
