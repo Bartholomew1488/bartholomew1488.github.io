@@ -12,11 +12,13 @@
     
     
     
+    
 }
 input{
+    
     padding: 10px;
-    color: red;
-    border: 1px solid black;
+    color: white;
+    
     background-color: black;
     border-radius: 50%;
 }
@@ -25,27 +27,59 @@ h1{
     padding: 10px;
 }
 .btn{
+    
     text-align: center;
-    margin: 0 auto;
     
     
     
 }
+
+/*.plus{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}*/
+.plus{
+  width:50px;
+  height:50px;
+  background: rgba(255,255,255,.5);
+  text-align: center;
+  padding: 10px;
+    margin: 0 0 0 auto;
+    font-size: 25px;
+    
+    border-radius: 50%;
+}
+
 #game_window{
-    display: none;
+    
+    display: none; 
     position: relative;
     width: 1200px;
     height: 500px;
-    border: 1px solid red;
     margin: auto;
     top:25%;
+   background-color:rgba(255,255,255,0.9);
+    background-image: url(img/3.png) ;
+    background-repeat: no-repeat;
+    background-size: 1200px 650px;
+    
+    
+    
+    
     
 }
 .game {
+ 
+   
     
     width: 1000px;
     height: 300px;
-    border-bottom: 1px solid black;
+    
     margin:auto;
     z-index: 1;
 }
@@ -70,15 +104,15 @@ h1{
     left: 800px;
     -webkit-animation: ;
     -o-animation: ;
-    animation: lexusMov 2s infinite linear ;
+    animation: lexusMov 3s infinite linear ;
 }
 #text {
     display: none;
+    
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-image: url(img/1.PNG);
-    
     background-repeat: no-repeat;
     z-index: 2;
     background-size: 100vw 100vh;
@@ -86,10 +120,10 @@ h1{
 }
 @keyframes lexusMov {
     0%{
-        left:800px;
+        left:900px;
     }
     100%{
-        left: -20px;
+        left: -100px;
     }
 }
 
